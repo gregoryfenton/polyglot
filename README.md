@@ -98,3 +98,11 @@ HEXSCOPE.COM RUNME.COM
 
 * **DOS Mode**: Bypasses standard I/O bottlenecks by writing directly to video memory segment `0xB800` using direct character and attribute word writes, combined with standard DOS INT 21h file handles and INT 16h keyboard polling.
 * **Linux Mode**: Configures terminal attributes via `termios` system calls to enable raw input mode (disabling canonical buffering and local echo), renders output via standard Linux `sys_write` syscalls, and positions the cursor precisely using ANSI escape sequences.
+
+## Screenshots
+
+### Running on Linux
+![Hexscope on Linux](./HSinLNX.png)
+
+### Running on MS-DOS (via 86Box)
+![Hexscope on DOS](./HSinDOS.png)
