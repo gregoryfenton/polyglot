@@ -677,7 +677,9 @@ linux_decimal8:
     mov ebx,100
     div ebx
     add al,'0'
+	push rdx
     call linux_char
+	pop rdx
     mov eax,edx
     xor edx,edx
     mov ebx,10
